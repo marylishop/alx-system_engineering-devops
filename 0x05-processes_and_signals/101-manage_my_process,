@@ -10,7 +10,7 @@ create()
 }
 
 if [ "$1" == "start" ]; then
-    create
+    createç
     ./manage_my_process &
     echo "manage_my_process started"
 
