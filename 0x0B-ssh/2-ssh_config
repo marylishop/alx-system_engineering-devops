@@ -1,0 +1,5 @@
+
+Host *
+    IdentityFile ~/.ssh/id_rsa
+ PasswordAuthentication no
+      IdentifyFile ~/.ssh/school
