@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# Bash script to fix nginx web server
-
-apt-get update -y
-apt-get install curl -y
-sed -i "s/listen 8080/listen 80/" /etc/nginx/sites-enabled/default
-sed -i "s/listen \[\:\:\]\:8080/listen \[\:\:\]\:80/" /etc/nginx/sites-enabled/default
-service nginx restart
+#Nginx must be running, and listening on port 80
+sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
+sudo service nginx restart
